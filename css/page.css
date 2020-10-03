@@ -549,6 +549,90 @@ background-color: #ff5200;
 border: 2px solid #ff5200;
 margin-top: 10px;
 }
+
+/* my skills start=====*/
+.skills {
+width: 600px;
+}
+.skillicon {
+font-size: 25px;
+color: red;
+}
+.skills ul li {
+position: relative;
+list-style: none;
+margin: 50px 0;
+font-weight: 500;
+text-transform: uppercase;
+}
+.skills ul li:before {
+content: "";
+position: absolute;
+top: calc(100% + 10px);
+left: 0;
+width: 100%;
+height: 10px;
+background-color: rgba(255,0,0,0.2);
+border-radius: 100px;
+}
+
+
+.skills ul li:after {
+content: "";
+position: absolute;
+top: calc(100% + 10px);
+left: 0;
+width: 0;
+height: 10px;
+background-color: rgba(255,0,0,1);
+border-radius: 100px;
+animation-duration: 0.6s;
+animation-timing-function: ease;
+animation-fill-mode: forwards;
+}
+
+.skills ul li.html:after {
+animation-name: html;
+}
+
+@keyframes html {
+    to {
+    width: 90%;
+    }
+}
+
+.skills ul li.css:after {
+animation-name: css;
+}
+
+@keyframes css {
+    to {
+    width: 80%;
+    }
+}
+
+
+.skills ul li.js:after {
+  animation-name: js;
+   }
+   
+@keyframes js {
+    to {
+    width: 60%;
+}
+}
+
+.skillpercent {
+margin-left: 220px;
+color: rgb(255,0,0);
+font-size: 20px;
+font-weight: 500;
+}
+/* my skills end=====*/
+
+
+
+
 #aboutSocialMenu {
 background-color: ;
 }
